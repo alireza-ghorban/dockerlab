@@ -1,0 +1,3 @@
+docker build -t dockerlab .
+docker run --rm -t -d -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output dockerlab
+docker exec -it <id> python3 py_script.py
